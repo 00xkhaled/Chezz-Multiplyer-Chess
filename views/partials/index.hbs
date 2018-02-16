@@ -1,0 +1,341 @@
+
+<style>
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+
+
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+.marketing {
+    margin: 40px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+.trg {
+    padding-right: 15px;
+    padding-left: 0px;
+}
+
+.pod {
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.side-img{
+    height: 32px;
+    width: 32px;
+}
+
+.table td, th {
+    text-align: center;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  -mox-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 20px 0;
+  color: #505050;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+section {
+  height: 101%;
+  min-height: 74em;
+}
+
+.bodysec {
+  min-height: 700px;
+}
+
+
+
+.container
+{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    max-width: 100% !important;
+}
+
+
+
+
+body {
+  font-family: 'Roboto';
+}
+.layout {
+  display: block;
+  position: relative;
+  background: #fff;
+  height: 100vh;
+}
+/* header */
+header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header .content {
+  position: relative;
+  display: block;
+  color: #FFFFFF;
+  top: 29%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 5px #000000;
+}
+
+header .content h1 {
+  font-size: 9em;
+  font-weight: normal;
+  font-family: cursive;
+  color:  white;
+}
+header .content h3 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.bg {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url('/img/04.jpeg') center no-repeat;
+  background-size: cover;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  z-index: -1;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+
+
+h1, button{
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+p{
+  color:#fff;
+  text-align: center;
+  padding-top: 500px;
+  font-size: 10px;
+}
+
+a{
+   text-decoration:none;
+   color:#fff;
+}
+
+a:hover{
+   color:#2ecc71;
+}
+
+.main{
+  width: 100%;
+}
+
+.sub-main{
+}
+
+.button-one, .button-two, .button-three{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  margin: 0 0 0 100px;
+}
+
+
+/*Button Two*/
+.button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  float:  right;
+  margin-right: 0em;
+  /* margin-top: 3em; */
+  /* right: 3em !important; */
+}
+
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+button#login {
+    margin-right: 36em;
+}
+
+button#play {
+    background-color:  goldenrod;
+}
+
+button#login {
+  background-color:  seagreen;
+}
+
+button#play:hover {
+    background-color: #dba52185;
+}
+
+
+button#login {
+    margin-right: 18em;
+}
+
+</style>
+
+<div class="bg"></div>
+
+<header>
+  <div class="content">
+    <h1> Chezz ! </h1>
+
+
+        <div class="sub-main">
+          <button class="button-two" id="login" onclick="login()" ><span>Login</span></button>
+        </div>
+
+
+        <div class="sub-main">
+          <button class="button-two" id="signup" onclick="register() "><span>Signup</span></button>
+        </div>
+
+
+        <div class="sub-main" >
+          <button  class="button-two" href='/play' id="play"  onclick="play() ">Play</button>
+        </div>
+
+  </div>
+</header>
+
+<div class="layout"></div>
+
+
+
+
+<script>
+//PARALLAX
+
+$(window).scroll(function(){
+  parallax();
+});
+
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('.bg').css('top',-(scrolled*0.1)+'px');
+  $('header .content').css('top',50+(scrolled*0.1)+'%');
+  $('header .content').css('opacity',1-(scrolled*0.01)/10);
+  $('header .content').css('opacity',1-(scrolled*0.01)/10);
+};
+</script>
+
+
+<script>
+function login()
+{
+     location.href = "/login";
+}
+
+function play()
+{
+     location.href = "/play";
+}
+
+function register()
+{
+     location.href = "/signup";
+}
+
+</script>

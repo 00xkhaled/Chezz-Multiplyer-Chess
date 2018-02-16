@@ -1,0 +1,176 @@
+<style>
+ul.nav.nav-pills.pull-right {
+    margin-right: 46em;
+    margin-top: 4em;
+}
+
+.modal-dialog {
+    margin-top: 25em;
+    color: indianred;
+}
+.content {
+    margin-top: 12em !important;
+}
+
+
+.panel-info>.panel-heading {
+    color: #31708f;
+    background-color: #008b8a;
+    border-color: #bce8f1;
+    color: white;
+    font-family: fantasy;
+    line-height: 2em;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #008b8a;
+    border-color: #337ab7;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #008b8aab;
+    border-color: #008b8aab;
+}
+
+
+img#logo {
+    width: 3em;
+    margin-top: -1em;
+    margin-left: -24em;
+}
+
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+
+
+
+
+body {
+  font-family: 'Roboto';
+}
+
+.bg {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url('/img/04.jpeg') center no-repeat;
+  background-size: cover;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  z-index: -1;
+}
+
+
+.panel-info {
+    border-color: #bce8f1;
+    width: 20em;
+    padding: 2em;
+    margin-left: 6em;
+}
+</style>
+
+<div class="bg"></div>
+
+<header>
+  <div class="row">
+    <div class="panel panel-info ">
+        <div class="panel-heading">
+            <h4 class="panel-title">Players</h4>
+        </div>
+        <div class="panel-body">
+            <p >
+                <img src="/bower_components/chessboardjs/img/chesspieces/wikipedia/bK.png" class="side-img" alt="Black"/>
+                <span id="player-black"></span> <span class="turn" id="turn-b">&nbsp;<i class=""></i></span>
+    <span id="timeb" >{{time}}</span>
+            </p>
+            <p>
+                <img src="/bower_components/chessboardjs/img/chesspieces/wikipedia/wK.png" class="side-img" alt="White"/>
+                <span id="player-white"></span> <span class="turn" id="turn-w">&nbsp;<i class=""></i></span>
+    <span id="timew" >{{time}}</span>
+            </p>
+        </div>
+    </div>
+
+
+
+
+      <div id="board" class="col-md-7" data-token="{{ token }}" data-side="{{ side }}"></div>
+
+
+
+      <div id="game-details" class="col-md-4 col-md-offset-1">
+
+        <div class="panel panel-info ">
+            <div class="panel-heading">
+                <h4 class="panel-title">Game Logs </h4>
+            </div>
+            <div class="panel-body">
+                <textarea id="pgn"></textarea>
+            </div>
+            <div class="panel-footer">
+                <button id="resignButton" type="button" class="btn btn-danger center-block">Resign</button>
+            </div>
+        </div>
+
+      </div>
+
+
+      <div class="modal fade" id="gameResultPopup" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Game Over</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p id="gameResult"></p>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="/" class="btn btn-danger">Return to home</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="gameUrlPopup" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Game URL</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>To invite a friend, give the following URL:</p>
+                      <p><em><span class="text-info" id="gameUrl"></span></em></p>
+                      <p>The game will be started once your friend joined the game.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="/" class="btn btn-danger">Cancel</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+</header>
+
+<div class="layout"></div>

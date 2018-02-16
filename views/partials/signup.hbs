@@ -1,0 +1,508 @@
+<style>
+  .container {
+    max-width: 100% !important;
+    margin-top: 2em !important;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+    margin-top: 16em;
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Dax:400,900");
+
+
+  .middle {
+    width: 100%;
+    text-align: center;
+    /* Made by */
+  }
+
+  .middle h1 {
+    font-family: "Dax", sans-serif;
+    color: #fff;
+  }
+
+  .middle input[type="radio"] {
+    display: none;
+  }
+
+  .middle input[type="radio"]:checked+.box {
+    background-color: #007e90;
+  }
+
+  .middle input[type="radio"]:checked+.box span {
+    color: white;
+    transform: translateY(70px);
+  }
+
+  .middle input[type="radio"]:checked+.box span:before {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .middle .box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: "Dax", sans-serif;
+    font-weight: 900;
+  }
+
+  .middle .box:active {
+    transform: translateY(10px);
+  }
+
+  .middle .box span {
+    position: absolute;
+    transform: translate(0, 60px);
+    left: 0;
+    right: 0;
+    transition: all 300ms ease;
+    font-size: 1.5em;
+    user-select: none;
+    color: #007e90;
+  }
+
+  .middle .box span:before {
+    font-size: 1.2em;
+    font-family: FontAwesome;
+    display: block;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    font-weight: normal;
+    color: white;
+  }
+
+
+
+  .middle p {
+    color: #fff;
+    font-family: "Dax", sans-serif;
+    font-weight: 400;
+  }
+
+  .middle p span:after {
+    content: '\f0e7';
+    font-family: FontAwesome;
+    color: yellow;
+  }
+
+
+
+  .panel-body {
+    padding: 15px;
+    margin-top: 7em !important;
+  }
+
+  /* Custom page header */
+
+  .header {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  /* Make the masthead heading the same height as the navigation */
+
+  .header h3 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+  }
+
+
+  /* Custom page footer */
+
+  .footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+  }
+
+
+  /* Main marketing message and sign up button */
+
+  .jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+  }
+
+  /* Supporting marketing content */
+
+  .marketing {
+    margin: 40px 0;
+  }
+
+  .marketing p+h4 {
+    margin-top: 28px;
+  }
+
+  /* Responsive: Portrait tablets and up */
+
+  @media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+      margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+      border-bottom: 0;
+    }
+  }
+
+  .trg {
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+
+  .pod {
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+
+  .side-img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .table td,
+  th {
+    text-align: center;
+  }
+
+
+
+  * {
+    box-sizing: border-box;
+    -mox-box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 100px;
+    margin: 20px 0;
+    color: #505050;
+  }
+
+  body {
+    font-family: helvetica, arial, sans-serif;
+  }
+
+  section {
+    height: 101%;
+    min-height: 74em;
+  }
+
+  .bodysec {
+    min-height: 700px;
+  }
+
+
+
+  .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    max-width: 100% !important;
+  }
+
+
+
+
+  body {
+    font-family: 'Roboto';
+  }
+
+  .layout {
+    display: block;
+    position: relative;
+    background: #fff;
+    height: 100vh;
+  }
+
+  /* header */
+
+  header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  header .content {
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+    top: 29%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 5px #000000;
+  }
+
+  header .content h1 {
+    font-size: 9em;
+    font-weight: normal;
+    font-family: cursive;
+    color: white;
+  }
+
+  header .content h3 {
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+
+  .bg {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: url('/img/04.jpeg') center no-repeat;
+    background-size: cover;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    z-index: -1;
+  }
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+
+
+  h1,
+  button {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  p {
+      color: #fff;
+      text-align: center;
+      padding-top: 1em;
+      font-size: 19px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    color: #2ecc71;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sub-main {}
+
+  .button-one,
+  .button-two,
+  .button-three {
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 0 0 100px;
+  }
+
+
+  /*Button Two*/
+
+  .button-two {
+    border-radius: 4px;
+    background-color: #d35400;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    float: right;
+    margin-right: 0em;
+    /* margin-top: 3em; */
+    /* right: 3em !important; */
+  }
+
+
+  .button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button-two span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button-two:hover span {
+    padding-right: 25px;
+  }
+
+  .button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  button#login {
+    margin-right: 36em;
+  }
+
+  button#play {
+    background-color: goldenrod;
+  }
+
+  button#login {
+    background-color: seagreen;
+  }
+
+  button#play:hover {
+    background-color: #dba52185;
+  }
+
+
+  button#login {
+    margin-right: 18em;
+  }
+
+
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 2em;
+    color: white;
+    font-family: fantasy;
+  }
+
+  .h2, h2 {
+    font-size: 3em;
+    margin-right: 0em !important;
+    color: white;
+    margin-left: 8em;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 54px;
+    padding: 10px 17px;
+    font-size: 1.2em;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #f5f5f51f;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+</style>
+
+<div class="bg"></div>
+
+<header>
+
+
+  <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+<h2> Sign Up</h2>
+              <form role="form" method="post" action="/signup">
+                  <div class="panel-body">
+                      <div class="form-group">
+                          <input type="email" class="form-control" name="email" placeholder="Email" autofocus required>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" name="userName" placeholder="User name" autofocus required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-control" name="password" placeholder="Password" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm password" required>
+                      </div>
+                  </div>
+                  <p><button type="submit" class="btn btn-default center-block">Submit</button></p>
+                  <p id="here-p" class="text-center">You have already an account? login <a href="/login" id="here ">here</a></p>
+
+              </form>
+          <div id="signupError" hidden="hidden">{{ error }}</div>
+  </div>
+</header>
+
+
+
+
+
+
+<script>
+  //PARALLAX
+
+  $(window).scroll(function() {
+    parallax();
+  });
+
+  function parallax() {
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('top', -(scrolled * 0.1) + 'px');
+    $('header .content').css('top', 50 + (scrolled * 0.1) + '%');
+    $('header .content').css('opacity', 1 - (scrolled * 0.01) / 10);
+    $('header .content').css('opacity', 1 - (scrolled * 0.01) / 10);
+  };
+</script>
+
+
+<script>
+  function login() {
+    location.href = "/login";
+  }
+
+  function play() {
+    location.href = "/play";
+  }
+
+  function signup() {
+    location.href = "/signup";
+  }
+</script>

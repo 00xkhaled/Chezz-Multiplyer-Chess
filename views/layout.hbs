@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Khaled Daoudieh and Dima shahin">
+    <link rel='stylesheet' href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' href="/bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel='stylesheet' href="/bower_components/chessboardjs/css/chessboard.min.css" />
+    <link rel='stylesheet' href="/bower_components/messenger/build/css/messenger.css" />
+    <link rel='stylesheet' href="/bower_components/messenger/build/css/messenger-spinner.css" />
+    <link rel='stylesheet' href="/bower_components/messenger/build/css/messenger-theme-future.css" />
+
+    <link rel='stylesheet' href="/stylesheets/Chezz.css" />
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="{{#if isHomePage}} active {{/if}}"><a href="/" title="Go to home page"></i> Home </a></li>
+            {{#if user}}
+            <li class="{{#if isAccountPage}} active {{/if}}"><a href="/account" title="My account"><span id="loggedUser" data-user="{{ user.name }}"></span><i class="fa fa-user"></i> {{ user.name }}</a></li>
+            <li><a href="/logout" title="Sign out"><i class="fa fa-sign-out"></i></a></li>
+            {{else}}
+            <li class="{{#if isLoginPage}} active {{/if}}"><a href="/login"></i>Login</a></li>
+            {{/if}}
+
+        </ul>
+
+        <ul class="nav nav-pills pull-left">
+
+        <img class="navbar-brand-sign" src="/img/s2.png" alt="chess piece" id="logo">
+        <a id="logotext">Chezz</a>
+    </ul>
+
+    </div>
+
+    <div class="content">
+        {{{body}}}
+    </div>
+
+    <div class="footer">
+    </div>
+
+</div> <!-- /container -->
+
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/chessboardjs/js/chessboard.min.js"></script>
+<script type="text/javascript" src="/bower_components/chessjs/dist/chess.min.js"></script>
+<script type="text/javascript" src="/bower_components/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="/bower_components/messenger/build/js/messenger.min.js"></script>
+<script type="text/javascript" src="/bower_components/messenger/build/js/messenger-theme-future.js"></script>
+<script type="text/javascript" src="/bower_components/highcharts/highcharts.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+<script type="text/javascript" src="/javascripts/Chezz.js"></script>
+
+</body>
+</html>

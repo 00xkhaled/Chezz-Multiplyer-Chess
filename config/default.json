@@ -1,0 +1,5 @@
+{
+    "Chezz": {
+        "db": "mongodb://localhost/test"
+    }
+}
