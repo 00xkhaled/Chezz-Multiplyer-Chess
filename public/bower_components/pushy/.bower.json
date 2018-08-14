@@ -1,0 +1,38 @@
+{
+  "name": "pushy",
+  "version": "1.1.0",
+  "homepage": "https://github.com/christophery/pushy",
+  "authors": [
+    "christophery <@cmyee>"
+  ],
+  "description": "Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.",
+  "main": [
+    "js/pushy.js",
+    "scss/pushy.scss"
+  ],
+  "keywords": [
+    "jquery",
+    "offcanvas",
+    "menu",
+    "responsive"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.0",
+    "commit": "d0c17e4ef9affed2d32da931280045210e4ee057"
+  },
+  "_source": "https://github.com/christophery/pushy.git",
+  "_target": "^1.1.0",
+  "_originalSource": "pushy",
+  "_direct": true
+}

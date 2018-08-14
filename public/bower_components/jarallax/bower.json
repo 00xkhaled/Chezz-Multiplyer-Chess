@@ -1,0 +1,24 @@
+{
+    "name": "jarallax",
+    "description": "Parallax plugin for background images and videos",
+    "main": ["jarallax/jarallax.js"],
+    "homepage": "https://github.com/nk-o/jarallax",
+    "authors": [
+        "_nK <https://nkdev.info>"
+    ],
+    "keywords": [
+        "parallax",
+        "image",
+        "background",
+        "youtube",
+        "vimeo",
+        "video"
+    ],
+    "license": "WTFPL",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "demo"
+    ]
+}
