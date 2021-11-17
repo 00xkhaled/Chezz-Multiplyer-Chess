@@ -1,4 +1,3 @@
-### My favourite quote :
 
 `` What is the beginning of eternity, the end of time and space, the beginning of every end and the end of every race?  ``
 
